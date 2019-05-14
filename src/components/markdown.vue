@@ -10,7 +10,6 @@
 </script>
 
 <template lang="md">
- <div>
   Follows these steps:
 
   1. Copy the following javascript code (click the "copy to clipboard" button)
@@ -34,5 +33,4 @@
 
   By entering this javascript code into your site, you prove that you are its real owner. Since then, no one else will
   be able to create another Colpirio account with the same URL.
-</div>
 </template>

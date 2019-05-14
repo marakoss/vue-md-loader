@@ -12,7 +12,12 @@ module.exports = {
 		.use('vue-md-loader')
 		.loader('vue-md-loader')
 		.tap(options => {
-			return options
+			return {
+				...options,
+				preProcess: function(template) {
+				  return `<div>${template}</div>`
+				}
+			}
 		})
 		.end();
 
@@ -22,7 +27,10 @@ module.exports = {
 		.use('ts-loader')
 		.loader('ts-loader')
 		.tap(options => {
-			return {appendTsSuffixTo: [/\.vue$/]}
+			return {
+				...options,
+				appendTsSuffixTo: [/\.vue$/],
+			}
 		})
 		.end();
 	}
