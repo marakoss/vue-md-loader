@@ -1,4 +1,7 @@
-# md
+# Vue Markdown loader
+
+This setup allows you to have markdown templates in your vue project combined with typescript loader, and fixes doubleing root compoment.
+Project contains demo page.
 
 ## Project setup
 ```
